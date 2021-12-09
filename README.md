@@ -7,8 +7,8 @@ Dx29 Docker Compose
 ### **Overview**
 
 The Dx29.Compose project includes two functionalities:
->1. Obtain the images of an environment from the Dx29 application. To do this you must have permissions in Azure in the Foundation29 subscription (therefore it is internal, for the programmers of the foundation). It is in the PullImages folder of the project and is programmed in Python. With its execution, the latest versions of the images of the development environment are downloaded locally (with a few code modifications, changing the endpoints, it can be quickly adapted to download those of another environment).
->2. This project also includes the DockerCompose file. Once the images are downloaded, this can be used to build the local container with the Docker images and ports that Foundation29 developers work with.
+>1. Obtain the **images** of an environment from the Dx29 application. To do this you must have permissions in Azure in subscription where the environment is deployed. It is in the PullImages folder of the project and is programmed in Python. With its execution, the latest versions of the images of a environment are downloaded locally (with a few code modifications, changing the endpoints, it can be quickly adapted to download those of another environment).
+>2. This project also includes the **DockerCompose** file. Once the images are downloaded, this can be used to build the local container with the Docker images and ports that Foundation29 developers work with.
 
 This project therefore accesses the Azure container registry of a selected environment. 
 
@@ -62,7 +62,7 @@ This project doesn’t need any dependency but it download and mount each needed
 
 ####  2. Download and installation
 
-DDownload the repository code with `git clone` or use download button.
+Download the repository code with `git clone` or use download button.
 
 We use [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/download) for working with this project.
 Having a [Python](https://www.python.org/downloads/) environment installed, for execute "PullImages/Scripts.py"
