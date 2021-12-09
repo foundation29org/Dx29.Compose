@@ -64,7 +64,7 @@ This project doesn’t need any dependency but it download and mount each needed
 
 DDownload the repository code with `git clone` or use download button.
 
-We use [Visual Studio 2019](https://docs.microsoft.com/en-GB/visualstudio/ide/quickstart-aspnet-core?view=vs-2022) for working with this project.
+We use [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/download) for working with this project.
 Having a [Python](https://www.python.org/downloads/) environment installed, for execute "PullImages/Scripts.py"
 
 <p>&nbsp;</p>
