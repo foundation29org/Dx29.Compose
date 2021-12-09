@@ -1,0 +1,75 @@
+version: '3.4'
+
+services:
+ dx29-bioentity:
+    image: dx29bioentity
+    ports:
+      - "8000:80"
+
+ dx29-termsearch2:
+    image: dx29-termsearch2
+    volumes: 
+      - ./.secrets:/usr/src/app/secrets
+    ports:
+      - "8001:8080"
+
+ dx29-filestorage:
+    image: dx29filestorage
+    volumes: 
+      - ./.secrets/appsettings.secrets.json:/app/secrets/appsettings.secrets.json
+    ports:
+      - "8100:80"
+
+ dx29-medicalhistory:
+    image: dx29medicalhistory
+    volumes: 
+      - ./.secrets/appsettings.secrets.json:/app/secrets/appsettings.secrets.json
+    ports:
+      - "8101:80"
+
+ dx29-annotations:
+    image: dx29annotations
+    volumes: 
+      - ./.secrets/appsettings.secrets.json:/app/secrets/appsettings.secrets.json
+    ports:
+      - "8102:80"
+
+ #dx29-annotations-worker:
+ #   image: dx29annotationsworker
+ #   volumes: 
+ #     - ./.secrets/appsettings.secrets.json:/app/secrets/appsettings.secrets.json
+
+  dx29-bionet:
+    image: dx29bionet
+    volumes: 
+      - ./.secrets:/usr/src/app/secrets
+    ports: 
+      - "8104:80"
+
+ dx29-localization:
+    image: dx29localization
+    volumes: 
+      - ./.secrets/appsettings.secrets.json:/app/secrets/appsettings.secrets.json
+    ports: 
+      - "8108:80"
+
+ dx29-mailing:
+    image: dx29-mailing
+    volumes: 
+      - ./.secrets/appsettings.secrets.json:/usr/src/app/secrets/appsettings.secrets.json
+    ports:
+      - "8109:8080"
+
+ dx29-documents:
+    image: dx29-documents
+    volumes: 
+      - ./.secrets/appsettings.secrets.json:/app/secrets/appsettings.secrets.json
+    ports:
+      - "8111:80"
+
+ dx29-phensimilarity:
+    image: dx29-phensimilarity
+    ports:
+      - "8200:8080"
+
+ 

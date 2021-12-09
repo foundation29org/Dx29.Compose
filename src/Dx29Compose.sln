@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4D185D07-1EA9-4D41-B95C-807829F85FA3}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PullImages", "PullImages\PullImages.pyproj", "{6D31E4CA-EBC9-4FB1-8D18-C7E21969BDC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Secrets", "Secrets", "{A03C8600-1899-41C4-8042-68BFF04FDAE9}"
+	ProjectSection(SolutionItems) = preProject
+		.secrets\appsettings.secrets.json = .secrets\appsettings.secrets.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D185D07-1EA9-4D41-B95C-807829F85FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D185D07-1EA9-4D41-B95C-807829F85FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D185D07-1EA9-4D41-B95C-807829F85FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D185D07-1EA9-4D41-B95C-807829F85FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D31E4CA-EBC9-4FB1-8D18-C7E21969BDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D31E4CA-EBC9-4FB1-8D18-C7E21969BDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E992F1EC-A5C8-445F-84FA-8429287E4C9E}
+	EndGlobalSection
+EndGlobal
